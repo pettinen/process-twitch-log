@@ -1,7 +1,7 @@
 [project]
 name = "process-twitch-log"
 version = "0.1.0"
-description = "Removes uninteresting lines from Twitch (Chatterino) chatlogs."
+description = "Removes uninteresting messages from Twitch (Chatterino) chatlogs."
 readme = "README.md"
 requires-python = ">=3.8"
 license = {file = "LICENSE"}
