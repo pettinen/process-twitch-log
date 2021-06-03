@@ -2,7 +2,7 @@ import fileinput
 import os
 import re
 from pathlib import Path
-from typing import Iterable, Union
+from typing import Iterable
 
 
 def keep_line(
