@@ -1,20 +1,18 @@
-[project]
+[tool.poetry]
 name = "process-twitch-log"
-version = "1.0.0"
+version = "1.1.0"
 description = "Removes uninteresting messages from Twitch (Chatterino) chatlogs."
+authors = ["Jeremias Pettinen <hi@jeremi.as>"]
+license = "ISC"
 readme = "README.md"
-requires-python = "~=3.8"
-license = {file = "LICENSE"}
-authors = [
-  {name = "Jeremias Pettinen", email = "hi@jeremi.as"}
-]
-
-[project.urls]
 repository = "https://github.com/pettinen/process-twitch-log"
 
-[project.scripts]
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[tool.poetry.scripts]
 process-twitch-log = "process_twitch_log:main"
 
 [build-system]
-requires = ["setuptools", "wheel"]
-build-backend = "setuptools.build_meta"
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
